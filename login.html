@@ -1,0 +1,225 @@
+<html>
+    <head>
+            <metacharset="utf-8">
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"rel="stylesheet"/>
+        <style>
+             /* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.newaccountbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+  
+} 
+        </style>
+    </head>
+    <body>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" class="newname" >
+                    <div class="curto"><p>Nome invalido (Pelo menos 4 caracteres)</p></div>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" class="newpwd" >
+                    <div class="curtop"><p>Password invalida (Pelo menos 8 caracteres)</p></div>
+                    <button type="submit" class="Confirm">Confirm</button>
+                </div>
+            </div>                 
+        </div>
+        <form action="action_page.php">
+            <div class="imgcontainer">
+              <img src="img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+          
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" class="uname" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" class="upwd" required>
+              <div class="erro"><p>Dados de Login não reconhecidos</p></div>
+          
+              <button type="button" class="done">Login</button>
+            </div>
+          
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" class="newaccountbtn">Create New Acount</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+          <script>
+              $(document).ready(function(){
+                window.localStorage.clear()
+                $(".curto").hide();
+                $(".curtop").hide();
+                $(".erro").hide();
+                if (window.localStorage.getItem("NumUsers")==null){
+                    window.localStorage.setItem("NumUsers",0)
+                }
+                var namechecker
+                var pwdchecker
+                $(".close").click(function(){
+                    $(".modal").hide();
+                    $(".curto").hide();
+                    $(".curtop").hide();
+                    $(".newname").val('');
+                    $(".newpwd").val('');
+                  });
+                $(".newaccountbtn").click(function(){
+                      $(".modal").show();
+                      namechecker=true;
+                      pwdchecker=true;
+                  });
+                $(".confirm").click(function(){
+                    var nome =$(".newname").val();
+                    var pwd = $(".newpwd").val();
+                    if(nome.length < 4){
+                        $(".curto").show();
+                        namechecker=false;
+                    }else{
+                        $(".curto").hide();
+                        namechecker=true;
+                    }
+                    if(pwd.length < 8){
+                        $(".curtop").show()
+                        pwdchecker=false;
+                    }else{
+                        $(".curtop").hide();
+                        pwdchecker=true;
+                    }
+                    if(namechecker && pwdchecker){
+                    window.localStorage.setItem("user"+window.localStorage.getItem("NumUsers"),nome);
+                    window.localStorage.setItem("NumUsers",(parseInt(window.localStorage.getItem("NumUsers"))+1).toString())
+                    window.localStorage.setItem(nome,pwd);
+                    console.log(window.localStorage.getItem("user0"));
+                    console.log(window.localStorage.getItem(nome))
+                    console.log(window.localStorage.getItem("NumUsers"))
+                    $(".modal").hide()
+                }
+                });
+                $(".done").click(function(){
+                    var nomeuser= $(".uname").val();
+                    var pwduser = $(".upwd").val();
+                    var UserExists=false;
+                    for (var c=0;c<parseInt(window.localStorage.getItem("NumUsers"));c++) {
+                        var nomes=window.localStorage.getItem("user"+c);
+                        var pass=window.localStorage.getItem(nomes);
+                        if(nomeuser==nomes && pwduser==pass){
+                            UserExists=true;
+                        }
+                    }
+                    if(UserExists){
+                        console.log("SUCESS")
+                        $(".erro").hide();
+                      }else{
+                        $(".erro").show();
+                    }
+                });
+              });
+          </script>
+    </body>
+</html>

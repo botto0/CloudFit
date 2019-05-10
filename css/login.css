@@ -1,0 +1,17 @@
+#user {
+    width: 50%;
+    order: 0;
+}
+
+#password {
+    width: 50%;
+    order: 1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main {}
