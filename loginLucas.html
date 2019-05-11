@@ -28,9 +28,10 @@
     <style> 
     body{
         background-image: url("images/login.jpg");
-        background-position: auto; /* Center the image */
+        background-position: top right; /* Center the image */
         background-repeat: no-repeat; /* Do not repeat the image */
         background-color:black;
+        background-size: cover;
     }
     </style>
      
@@ -61,58 +62,45 @@
 		  </div>
 	  </nav>
     <!-- END nav -->
-<section class="ftco-section contact-section">
-      <div class="container">
-        <div class="row block-9">
-					<div class="col-md-4 contact-info ftco-animate bg-light p-4">
-						<div class="row">
-							<div class="col-md-12 mb-4">
-	              <h2 class="h4">Contact Information</h2>
-	            </div>
-	            <div class="col-md-12 mb-3">
-	              <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
-	            </div>
-	            <div class="col-md-12 mb-3">
-	              <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
-	            </div>
-	            <div class="col-md-12 mb-3">
-	              <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
-	            </div>
-	            <div class="col-md-12 mb-3">
-	              <p><span>Website:</span> <a href="#">yoursite.com</a></p>
-	            </div>
-						</div>
-					</div>
-          
-					<div class="col-md-1"></div>
+<section class="ftco-section contact-section">  
+  <div class = "row">
+
+
+
+					<div class="col-md-3"></div>
           <div class="col-md-6 ftco-animate">
-            <form action="#" class="contact-form">
-            	<div class="row">
+            <form action="#" style = "background-color:white; padding:5%;"class="contact-form">
+
+            	
             		<div class="col-md-6">
+
 	                <div class="form-group">
-	                  <input type="text" class="form-control" placeholder="Your Name">
+	                  <input type="text" class="form-control" placeholder="Username">
 	                </div>
                 </div>
+
                 <div class="col-md-6">
 	                <div class="form-group">
-	                  <input type="text" class="form-control" placeholder="Your Email">
+	                  <input type="text" class="form-control" placeholder="Password">
 	                </div>
 	                </div>
+
+              <div class="form-group" style = "margin-left: 2%">
+                <input type="submit" value="Login" class="btn btn-primary py-3 px-5">
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
+
+              <div class="form-group" style = "margin-left: 2%">
+                <input type="submit" value="Forgot Password?" class="btn btn-primary py-1 px-3">
               </div>
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-              </div>
+
             </form>
           </div>
         </div>
       </div>
-    </section>
+
+
+  </div>
+</section>
    
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
