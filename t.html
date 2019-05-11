@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Muscle - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style> 
+    body{
+        background-image: url("images/login.jpg");
+        background-position: auto; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-color:black;
+    }
+    </style>
+     
+  </head>
+
+  <body>
+
+<div class="container1">
+
+  	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand py-2 px-4" style="font-size: 18px;" href="index.html">CloudFit</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+	          						<li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+<li class="nav-item"><a href="program.html" class="nav-link">Program</a></li>
+	          <li class="nav-item"><a href="coaches.html" class="nav-link">Coaches</a></li>
+	          <li class="nav-item"><a href="schedule.html" class="nav-link">Schedule</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="blog.html" class="nav-link">Journal</a></li>
+	          <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
+	        </ul>
+	      </div>
+		  </div>
+	  </nav>
+    <!-- END nav -->
+
+		<div class="row">
+                     <div style = "margin-top: 10%;" class="col-md-6 ftco-animate"></div>   
+
+          <div style = "background-color: white;" class="col-md-6 offset-md-3 ftco-animate">
+            <form action="#" class="contact-form">
+            	
+                <div class="row">
+            		<div class="col-md-6">
+	                <div class="form-group">
+	                  <input type="text" class="form-control" placeholder="Username">
+	                </div>
+                </div>
+                </div>
+                            	<div class="row">
+
+                <div class="col-md-6">
+	                <div class="form-group">
+	                  <input type="text" class="form-control" placeholder="Password">
+	                </div>
+	                </div>
+              </div>
+              </div>
+              
+              <div class= "row">
+              
+              <div class=" form-group ">
+                <input type="submit" value="Login" class="btn btn-primary py-3 px-5">
+              </div>
+
+              </div>
+            </form>
+          </divv>
+        </div>
+    </div>
+        <div style = "margin-top: 10%;" class="col-md-6 ftco-animate"></div>
+    </div>
+    </section>
+   
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+</div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+          <script>
+              $(document).ready(function(){
+                window.localStorage.clear()
+                $(".curto").hide();
+                $(".curtop").hide();
+                $(".erro").hide();
+                if (window.localStorage.getItem("NumUsers")==null){
+                    window.localStorage.setItem("NumUsers",0)
+                }
+                var namechecker
+                var pwdchecker
+                $(".close").click(function(){
+                    $(".modal").hide();
+                    $(".curto").hide();
+                    $(".curtop").hide();
+                    $(".newname").val('');
+                    $(".newpwd").val('');
+                  });
+                $(".newaccountbtn").click(function(){
+                      $(".modal").show();
+                      namechecker=true;
+                      pwdchecker=true;
+                  });
+                $(".confirm").click(function(){
+                    var nome =$(".newname").val();
+                    var pwd = $(".newpwd").val();
+                    if(nome.length < 4){
+                        $(".curto").show();
+                        namechecker=false;
+                    }else{
+                        $(".curto").hide();
+                        namechecker=true;
+                    }
+                    if(pwd.length < 8){
+                        $(".curtop").show()
+                        pwdchecker=false;
+                    }else{
+                        $(".curtop").hide();
+                        pwdchecker=true;
+                    }
+                    if(namechecker && pwdchecker){
+                    window.localStorage.setItem("user"+window.localStorage.getItem("NumUsers"),nome);
+                    window.localStorage.setItem("NumUsers",(parseInt(window.localStorage.getItem("NumUsers"))+1).toString())
+                    window.localStorage.setItem(nome,pwd);
+                    console.log(window.localStorage.getItem("user0"));
+                    console.log(window.localStorage.getItem(nome))
+                    console.log(window.localStorage.getItem("NumUsers"))
+                    $(".modal").hide()
+                }
+                });
+                $(".done").click(function(){
+                    var nomeuser= $(".uname").val();
+                    var pwduser = $(".upwd").val();
+                    var UserExists=false;
+                    for (var c=0;c<parseInt(window.localStorage.getItem("NumUsers"));c++) {
+                        var nomes=window.localStorage.getItem("user"+c);
+                        var pass=window.localStorage.getItem(nomes);
+                        if(nomeuser==nomes && pwduser==pass){
+                            UserExists=true;
+                        }
+                    }
+                    if(UserExists){
+                        console.log("SUCESS")
+                        $(".erro").hide();
+                      }else{
+                        $(".erro").show();
+                    }
+                });
+              });
+          </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
