@@ -69,25 +69,25 @@
             <table class="table table-hover table-dark col-md-6">
 
                 <tr>
-                    <td id="row11"></td>
+                    <td id="row1"></td>
                 </tr>
                 <tr>
-                    <td id="row12"></td>
+                    <td id="row2"></td>
                 </tr>
                 <tr>
-                    <td id="row13"></td>
+                    <td id="row3"></td>
                 </tr>
                 <tr>
-                    <td id="row14"></td>
+                    <td id="row4"></td>
                 </tr>
                 <tr>
-                    <td id="row15"></td>
+                    <td id="row5"></td>
                 </tr>
                 <tr>
-                    <td id="row16"></td>
+                    <td id="row6"></td>
                 </tr>
                 <tr>
-                    <td id="row17"></td>
+                    <td id="row7"></td>
                 </tr>
             </table>
         </div>
@@ -134,6 +134,16 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            var data=JSON.parse(window.localStorage.getItem("Data"));
+            var plano= data.PlanoTreinoAtual
+            console.log(plano)
+            for(var i=0;i<plano.length;i++){
+                $("#row"+(i+1)).text(plano[i]);
+            }
+        });
+    </script>
 
 </body>
 
