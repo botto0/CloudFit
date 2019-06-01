@@ -4,8 +4,7 @@
 <head>
     <title>CloudFit</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1,
-            shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
@@ -22,30 +21,81 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        body {
-            background-color: rgb(0, 0, 0);
-        }
-        
-        .ftco-footer {
-            background-color: rgb(30, 34, 41);
-        }
+        .chat
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat li
+{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+
+.chat li.left .chat-body
+{
+    margin-left: 60px;
+}
+
+.chat li.right .chat-body
+{
+    margin-right: 60px;
+}
+
+
+.chat li .chat-body p
+{
+    margin: 0;
+    color: #777777;
+}
+
+.panel .slidedown .glyphicon, .chat .glyphicon
+{
+    margin-right: 5px;
+}
+
+.panel-body
+{
+    overflow-y: scroll;
+    height: 250px;
+}
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark
-            ftco-navbar-light" id="ftco-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
             <a class="navbar-brand py-2 px-4" style="font-size: 18px;" href="index.html">CloudFit</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="oi oi-menu"></span> Menu
-                </button>
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="athlete_info.html" class="nav-link">Info</a></li>
+                        <li class="nav-item active"><a href="athlete_info.html" class="nav-link">Info</a></li>
                     <li class="nav-item"><a href="athlete_progress.html" class="nav-link">Progress</a></li>
-                    <li class="nav-item"><a href="atlete_plan.html" class="nav-link">Workout Plan</a></li>
-                    <li class="nav-item active"><a href="atlete_plan.html" class="nav-link">Chat</a></li>
+                    <li class="nav-item"><a href="athlete_plan.html" class="nav-link">Workout Plan</a></li>
+                    <li class="nav-item"><a href="athlete_chat.html" class="nav-link">Chat</a></li>
                     <li class="nav-item"><a href="index.html" class="nav-link">Logout</a></li>
                 </ul>
             </div>
@@ -54,28 +104,50 @@
     <!-- END nav -->
 
 
-
-    <div class="container-fluid">
-        <div class="row mb-2" style="display: flex;
-                    justify-content:center;">
-            <div class="col-lg-3 col-md-6 mb-5 mb-md-5">
-                <div class="ftco-footer-widget mb-4">
-                    <p>Website desenvolvido no âmbito da cadeira Modelação e Análise de Sistemas. <br>Universidade de Aveiro</p>
+<section>
+    <div class="container"></div>
+        <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">                                            
+                                <div class="btn-group pull-right">
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="chat0">
+                                 
+                                </ul>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="input-group">
+                                    <input id="btn-input0" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-warning btn-sm" id="btn-chat0">
+                                            Send</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+</section>
+    <footer class="ftco-footer ftco-section img">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row mb-5" style="display: flex; justify-content:center;">
+                <div class="col-lg-3 col-md-6 mb-5 mb-md-5">
+                    <div class="ftco-footer-widget mb-4">
+                        <p>Website desenvolvido no âmbito da cadeira Modelação e Análise de Sistemas. <br>Universidade de Aveiro</p>
+                    </div>
+                </div>
 
-
+    </footer>
 
 
     <!-- loader -->
-    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle
-                            class="path-bg" cx="24" cy="24" r="22" fill="none"
-                            stroke-width="4" stroke="#eeeeee" /><circle
-                                class="path" cx="24" cy="24" r="22" fill="none"
-                                stroke-width="4" stroke-miterlimit="10"
-                                stroke="#F96D00" /></svg></div>
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
     <script src="js/jquery.min.js"></script>
@@ -96,16 +168,26 @@
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
     <script>
-        $(document).ready(function() {
-            var data = JSON.parse(window.localStorage.getItem("Data"));
-            var plano = data.PlanoTreinoAtual
-            console.log(plano)
-            for (var i = 0; i < plano.length; i++) {
-                $("#row" + (i + 1)).text(plano[i]);
-            }
-        });
-    </script>
+    $(document).ready(function(){
+        var data= JSON.parse(window.localStorage.getItem("Data"))
+    $("#btn-chat0").click(function(){
+        var AtletaChat0=JSON.parse(window.localStorage.getItem("user2"))
+        console.log(AtletaChat0);
+        var msg=$("#btn-input0").val();
+        AtletaChat0.mensagens.push(data.Name+"  said:  "+msg);
+        window.localStorage.setItem("user2",JSON.stringify(AtletaChat0));
+        console.log(msg)
+        console.log(data)
+        $(".chat0").append('<div class="chat-body clearfix"><p>'+data.Name+"  said:  "+msg+'</p></div>');
+        $("#btn-input0").val("")
+    })
+            var DataDoAtleta=JSON.parse(window.localStorage.getItem("user2"));
+            DataDoAtleta.mensagens.forEach(function(Element){
+                $(".chat0").append('<div class="chat-body clearfix"><p>'+Element+'</p></div>');
+            })
+        })
+</script>
 
 </body>
 
-</html
+</html>

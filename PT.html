@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>CloudFit</title>
+    <title>Muscle - Free Bootstrap 4 Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -47,6 +47,73 @@
         tr:nth-child(even) {
             background-color: #dddddd;
         }
+        #container {
+    width: 600px;
+    border: 5px solid rgba(117, 147, 62, 0.83);
+    margin: 15px auto;
+    background: rgba(194, 210, 160, 0.70);
+
+}
+.chat
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat li
+{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+
+.chat li.left .chat-body
+{
+    margin-left: 60px;
+}
+
+.chat li.right .chat-body
+{
+    margin-right: 60px;
+}
+
+
+.chat li .chat-body p
+{
+    margin: 0;
+    color: #777777;
+}
+
+.panel .slidedown .glyphicon, .chat .glyphicon
+{
+    margin-right: 5px;
+}
+
+.panel-body
+{
+    overflow-y: scroll;
+    height: 250px;
+}
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
     </style>
 </head>
 
@@ -165,569 +232,40 @@
                             </div>
                             <div class="col-sm-4">
                                 <h3>Chat</h3>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="panel panel-primary">
+                                                <div class="panel-heading">                                            
+                                                    <div class="btn-group pull-right">
+                                                    </div>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <ul class="chat0">
+                                                     
+                                                    </ul>
+                                                </div>
+                                                <div class="panel-footer">
+                                                    <div class="input-group">
+                                                        <input id="btn-input0" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                                                        <span class="input-group-btn">
+                                                            <button class="btn btn-warning btn-sm" id="btn-chat0">
+                                                                Send</button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
                     <div>
 
-                    </div>
-                    <div class="row UrAtlete2">
-                        <div class="container-fluid">
-                            <div class="row justify-content-center mb-5">
-                                <div class="col-md-7 heading-section text-center ftco-animate">
-                                    <h2 class="mb-1"></h2>
-                                </div>
-                            </div>
-                            <div class="row" style="display:flex; justify-content:center">
-                                <div class="col-lg-6 d-flex">
-                                    <div class="coach align-items-stretch">
-                                        <div class="img" style="background-image: url(images/trainer-1.jpg);"></div>
-                                        <div class="text bg-white p-4 ftco-animate">
-                                            <h3><a href="#" class="Nome2">Mark Brook</a></h3>
-                                            <h5>Athlete</h5>
-                                            <button class="atleta2">Mais info</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container Atleta2">
-                                <div class="row UrAtlete2">
-                                    <div class="col-sm-4">
-                                        <h3>Plano de Traino atual</h3>
-                                        <table>
-                                            <tr>
-                                                <td id="row21">10 burpees</td>
-                                            </tr>
-                                            <tr>
-                                                <td id="row22">15 Felxões de tricep</td>
-                                            </tr>
-                                            <tr>
-                                                <td id="row23">Plank 30 segundos</td>
-                                            </tr>
-                                            <tr>
-                                                <td id="row24">30 Agachamentos</td>
-                                            </tr>
-                                            <tr>
-                                                <td id="row25">32 Flexões Peito</td>
-                                            </tr>
-                                            <tr>
-                                                <td id="row26">Dead Lift</td>
-                                            </tr>
-                                            <tr>
-                                                <td id="row27">25 Lounge</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <h3>Atualizar plano de treino</h3>
-                                        <table>
-                                            <tr>
-                                                <th><input id="line21" style="height:25px"></input>
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <th><input id="line22" style="height:25px"></input>
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <th><input id="line23" style="height:25px"></input>
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <th><input id="line24" style="height:25px"></input>
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <th><input id="line25" style="height:25px"></input>
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <th><input id="line26" style="height:25px"></input>
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <th><input id="line27" style="height:25px"></input>
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <th><button class="btn btn-primary updt2">Atualizar</button></th>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <h3>Chat</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-
-                            </div>
-                            <div class="row UrAtlete3">
-                                <div class="container-fluid">
-                                    <div class="row justify-content-center mb-5">
-                                        <div class="col-md-7 heading-section text-center ftco-animate">
-                                            <h2 class="mb-1"></h2>
-                                        </div>
-                                    </div>
-                                    <div class="row" style="display:flex; justify-content:center">
-                                        <div class="col-lg-6 d-flex">
-                                            <div class="coach align-items-stretch">
-                                                <div class="img" style="background-image: url(images/trainer-1.jpg);"></div>
-                                                <div class="text bg-white p-4 ftco-animate">
-                                                    <h3 class="Nome3">Mark Brook</h3>
-                                                    <h5>Athlete</h5>
-                                                    <button class="atleta3">Mais info</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="container Atleta3">
-                                        <div class="row">
-                                            <div class="col-sm-4">
-                                                <h3>Plano de Traino atual</h3>
-                                                <table>
-                                                    <tr>
-                                                        <td id="row31">10 burpees</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td id="row32">15 Felxões de tricep</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td id="row33">Plank 30 segundos</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td id="row34">30 Agachamentos</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td id="row35">32 Flexões Peito</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td id="row36">Dead Lift</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td id="row37">25 Lounge</td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <h3>Atualizar plano de treino</h3>
-                                                <table>
-                                                    <tr>
-                                                        <th><input id="line31" style="height:25px"></input>
-                                                        </th>
-                                                    </tr>
-                                                    <tr>
-                                                        <th><input id="line32" style="height:25px"></input>
-                                                        </th>
-                                                    </tr>
-                                                    <tr>
-                                                        <th><input id="line33" style="height:25px"></input>
-                                                        </th>
-                                                    </tr>
-                                                    <tr>
-                                                        <th><input id="line34" style="height:25px"></input>
-                                                        </th>
-                                                    </tr>
-                                                    <tr>
-                                                        <th><input id="line35" style="height:25px"></input>
-                                                        </th>
-                                                    </tr>
-                                                    <tr>
-                                                        <th><input id="line36" style="height:25px"></input>
-                                                        </th>
-                                                    </tr>
-                                                    <tr>
-                                                        <th><input id="line37" style="height:25px"></input>
-                                                        </th>
-                                                    </tr>
-                                                    <tr>
-                                                        <th><button class="btn btn-primary updt3">Atualizar</button></th>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <h3>Chat</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-
-                                    </div>
-                                    <div class="row UrAtlete4">
-                                        <div class="container-fluid">
-                                            <div class="row justify-content-center mb-5">
-                                                <div class="col-md-7 heading-section text-center ftco-animate">
-                                                    <h2 class="mb-1"></h2>
-                                                </div>
-                                            </div>
-                                            <div class="row" style="display:flex; justify-content:center">
-                                                <div class="col-lg-6 d-flex">
-                                                    <div class="coach align-items-stretch">
-                                                        <div class="img" style="background-image: url(images/trainer-1.jpg);"></div>
-                                                        <div class="text bg-white p-4 ftco-animate">
-                                                            <h3><a href="#" class="Nome4">Mark Brook</a></h3>
-                                                            <h5>Athlete</h5>
-                                                            <button class="atleta4">Mais info</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="container Atleta4">
-                                                <div class="row">
-                                                    <div class="col-sm-4">
-                                                        <h3>Plano de Traino atual</h3>
-                                                        <table>
-                                                            <tr>
-                                                                <td id="row41">10 burpees</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td id="row42">15 Felxões de tricep</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td id="row43">Plank 30 segundos</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td id="row44">30 Agachamentos</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td id="row45">32 Flexões Peito</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td id="row46">Dead Lift</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td id="row47">25 Lounge</td>
-                                                            </tr>
-                                                        </table>
-                                                    </div>
-                                                    <div class="col-sm-4">
-                                                        <h3>Atualizar plano de treino</h3>
-                                                        <table>
-                                                            <tr>
-                                                                <th><input id="line41" style="height:25px"></input>
-                                                                </th>
-                                                            </tr>
-                                                            <tr>
-                                                                <th><input id="line42" style="height:25px"></input>
-                                                                </th>
-                                                            </tr>
-                                                            <tr>
-                                                                <th><input id="line43" style="height:25px"></input>
-                                                                </th>
-                                                            </tr>
-                                                            <tr>
-                                                                <th><input id="line44" style="height:25px"></input>
-                                                                </th>
-                                                            </tr>
-                                                            <tr>
-                                                                <th><input id="line45" style="height:25px"></input>
-                                                                </th>
-                                                            </tr>
-                                                            <tr>
-                                                                <th><input id="line46" style="height:25px"></input>
-                                                                </th>
-                                                            </tr>
-                                                            <tr>
-                                                                <th><input id="line47" style="height:25px"></input>
-                                                                </th>
-                                                            </tr>
-                                                            <tr>
-                                                                <th><button class="btn btn-primary updt4">Atualizar</button></th>
-                                                            </tr>
-                                                        </table>
-                                                    </div>
-                                                    <div class="col-sm-4">
-                                                        <h3>Chat</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div>
-
-                                            </div>
-                                            <div class="row UrAtlete5">
-                                                <div class="container-fluid">
-                                                    <div class="row justify-content-center mb-5">
-                                                        <div class="col-md-7 heading-section text-center ftco-animate">
-                                                            <h2 class="mb-1"></h2>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row" style="display:flex; justify-content:center">
-                                                        <div class="col-lg-6 d-flex">
-                                                            <div class="coach align-items-stretch">
-                                                                <div class="img" style="background-image: url(images/trainer-1.jpg);"></div>
-                                                                <div class="text bg-white p-4 ftco-animate">
-                                                                    <h3><a href="#" class="Nome5">Mark Brook</a></h3>
-                                                                    <h5>Athlete</h5>
-                                                                    <button class="atleta5">Mais info</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="container Atleta5">
-                                                        <div class="row">
-                                                            <div class="col-sm-4">
-                                                                <h3>Plano de Traino atual</h3>
-                                                                <table>
-                                                                    <tr>
-                                                                        <td id="row51">10 burpees</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td id="row52">15 Felxões de tricep</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td id="row53">Plank 30 segundos</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td id="row54">30 Agachamentos</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td id="row55">32 Flexões Peito</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td id="row56">Dead Lift</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td id="row57">25 Lounge</td>
-                                                                    </tr>
-                                                                </table>
-                                                            </div>
-                                                            <div class="col-sm-4">
-                                                                <h3>Atualizar plano de treino</h3>
-                                                                <table>
-                                                                    <tr>
-                                                                        <th><input id="line51" style="height:25px"></input>
-                                                                        </th>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th><input id="line52" style="height:25px"></input>
-                                                                        </th>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th><input id="line53" style="height:25px"></input>
-                                                                        </th>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th><input id="line54" style="height:25px"></input>
-                                                                        </th>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th><input id="line55" style="height:25px"></input>
-                                                                        </th>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th><input id="line56" style="height:25px"></input>
-                                                                        </th>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th><input id="line57" style="height:25px"></input>
-                                                                        </th>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th><button class="btn btn-primary updt5">Atualizar</button></th>
-                                                                    </tr>
-                                                                </table>
-                                                            </div>
-                                                            <div class="col-sm-4">
-                                                                <h3>Chat</h3>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-
-                                                    </div>
-                                                    <div class="row UrAtlete6">
-                                                        <div class="container-fluid">
-                                                            <div class="row justify-content-center mb-5">
-                                                                <div class="col-md-7 heading-section text-center ftco-animate">
-                                                                    <h2 class="mb-1"></h2>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row" style="display:flex; justify-content:center">
-                                                                <div class="col-lg-6 d-flex">
-                                                                    <div class="coach align-items-stretch">
-                                                                        <div class="img" style="background-image: url(images/trainer-1.jpg);"></div>
-                                                                        <div class="text bg-white p-4 ftco-animate">
-                                                                            <h3><a href="#" class="Nome6">Mark Brook</a></h3>
-                                                                            <h5>Athlete</h5>
-                                                                            <button class="atleta6">Mais info</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="container Atleta6">
-                                                                <div class="row">
-                                                                    <div class="col-sm-4">
-                                                                        <h3>Plano de Traino atual</h3>
-                                                                        <table>
-                                                                            <tr>
-                                                                                <td id="row61">10 burpees</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td id="row62">15 Felxões de tricep</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td id="row63">Plank 30 segundos</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td id="row64">30 Agachamentos</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td id="row65">32 Flexões Peito</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td id="row66">Dead Lift</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td id="row67">25 Lounge</td>
-                                                                            </tr>
-                                                                        </table>
-                                                                    </div>
-                                                                    <div class="col-sm-4">
-                                                                        <h3>Atualizar plano de treino</h3>
-                                                                        <table>
-                                                                            <tr>
-                                                                                <th><input id="line61" style="height:25px"></input>
-                                                                                </th>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th><input id="line62" style="height:25px"></input>
-                                                                                </th>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th><input id="line63" style="height:25px"></input>
-                                                                                </th>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th><input id="line64" style="height:25px"></input>
-                                                                                </th>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th><input id="line65" style="height:25px"></input>
-                                                                                </th>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th><input id="line66" style="height:25px"></input>
-                                                                                </th>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th><input id="line67" style="height:25px"></input>
-                                                                                </th>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th><button class="btn btn-primary updt6">Atualizar</button></th>
-                                                                            </tr>
-                                                                        </table>
-                                                                    </div>
-                                                                    <div class="col-sm-4">
-                                                                        <h3>Chat</h3>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div>
-
-                                                            </div>
-                                                            <div class="row UrAtlete7">
-                                                                <div class="container-fluid">
-                                                                    <div class="row justify-content-center mb-5">
-                                                                        <div class="col-md-7 heading-section text-center ftco-animate">
-                                                                            <h2 class="mb-1"></h2>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row" style="display:flex; justify-content:center">
-                                                                        <div class="col-lg-6 d-flex">
-                                                                            <div class="coach align-items-stretch">
-                                                                                <div class="img" style="background-image: url(images/trainer-1.jpg);"></div>
-                                                                                <div class="text bg-white p-4 ftco-animate">
-                                                                                    <h3><a href="#" class="Nome7">Mark Brook</a></h3>
-                                                                                    <h5>Athlete</h5>
-                                                                                    <button class="atleta7">Mais info</button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="container Atleta7">
-                                                                        <div class="row">
-                                                                            <div class="col-sm-4">
-                                                                                <h3>Plano de Traino atual</h3>
-                                                                                <table>
-                                                                                    <tr>
-                                                                                        <td id="row71">10 burpees</td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td id="row72">15 Felxões de tricep</td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td id="row73">Plank 30 segundos</td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td id="row74">30 Agachamentos</td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td id="row75">32 Flexões Peito</td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td id="row76">Dead Lift</td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td id="row77">25 Lounge</td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </div>
-                                                                            <div class="col-sm-4">
-                                                                                <h3>Atualizar plano de treino</h3>
-                                                                                <table>
-                                                                                    <tr>
-                                                                                        <th><input id="line71" style="height:25px"></input>
-                                                                                        </th>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <th><input id="line72" style="height:25px"></input>
-                                                                                        </th>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <th><input id="line73" style="height:25px"></input>
-                                                                                        </th>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <th><input id="line74" style="height:25px"></input>
-                                                                                        </th>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <th><input id="line75" style="height:25px"></input>
-                                                                                        </th>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <th><input id="line76" style="height:25px"></input>
-                                                                                        </th>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <th><input id="line77" style="height:25px"></input>
-                                                                                        </th>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <th><button class="btn btn-primary updt7">Atualizar</button></th>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </div>
-                                                                            <div class="col-sm-4">
-                                                                                <h3>Chat</h3>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div>
-
-                                                                    </div> <footer class="ftco-footer ftco-section img">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row mb-5" style="display: flex;
-                    justify-content:center;">
-                    <div class="col-lg-3 col-md-6 mb-5 mb-md-5">
-                        <div class="ftco-footer-widget mb-4">
-                            <p>Website desenvolvido no âmbito da cadeira Modelação e Análise de Sistemas. <br>Universidade de Aveiro</p>
-                        </div>
-                    </div>
-
-        </footer>
+            </div>
+</div>
 </body>
 
 </html>
@@ -757,12 +295,6 @@
         var atletas = data.Atletas;
         console.log(atletas)
         $(".Atleta1").hide()
-        $(".Atleta2").hide()
-        $(".Atleta3").hide()
-        $(".Atleta4").hide()
-        $(".Atleta5").hide()
-        $(".Atleta6").hide()
-        $(".Atleta7").hide()
         for (var i = 0; i < atletas.length; i++) {
             $(".UrAtlete" + i + 1).show();
             var atletadata = JSON.parse(window.localStorage.getItem(atletas[i]))
@@ -779,6 +311,14 @@
         for (var b = atletas.length + 1; b <= 7; b++) {
             $(".UrAtlete" + b).hide()
         }
+        for (var i = 0; i < atletas.length; i++) {
+            var DataDoAtleta=JSON.parse(window.localStorage.getItem(atletas[i]));
+            DataDoAtleta.mensagens.forEach(function(Element){
+                $(".chat"+i).append('<div class="chat-body clearfix"><p>'+Element+'</p></div>');
+            })
+        }
+
+        
         /*var h='<div class="row"><div class="container-fluid"><div class="row justify-content-center mb-5"><div class="col-md-7 heading-section text-center ftco-animate"><p class="mb-1">Your Atlete:</p></div></div><div class="row" style="display:flex; justify-content:center"><div class="col-lg-6 d-flex"><div class="coach align-items-stretch"><div class="img" style="background-image: url(images/trainer-1.jpg);"></div><div class="text bg-white p-4 ftco-animate"><h3><a href="#" class="Nome">Mark Brook</a></h3><h5>Athlete</h5><ul class="ftco-social-media d-flex mt-4" style="display:flex; justify-content:center; "><li class="ftco-animate"><a  class="mr-2 d-flex justify-content-center align-items-center atleta1"><span class="icon-plus ic"></span></a></li></ul></div></div></div></div><div class="container Atleta"><div class="row"><div class="col-sm-4"><h3>Plano de Traino atual</h3><table><tr><td id="row1">10 burpees</td></tr><tr><td id="row2">15 Felxões de tricep</td></tr><tr><td id="row3">Plank 30 segundos</td></tr><tr><td id="row4">30 Agachamentos</td></tr><tr><td id="row5">32 Flexões Peito</td></tr><tr><td id="row6">Dead Lift</td></tr><tr><td id="row7">25 Lounge</td></tr></table></div><div class="col-sm-4"><h3>Atualizar plano de treino</h3><table><tr><th><input id="line1" style="height:25px"></input></th></tr><tr><th><input id="line2" style="height:25px"></input></th></tr><tr><th><input id="line3" style="height:25px"></input></th></tr><tr><th><input id="line4" style="height:25px"></input></th></tr><tr><th><input id="line5" style="height:25px"></input></th></tr><tr><th><input id="line6" style="height:25px"></input></th></tr><tr><th><input id="line7" style="height:25px"></input></th></tr><tr><th><button class="btn btn-primary updt">Atualizar</button></th> </tr></table></div><div class="col-sm-4"><h3>Chat</h3></div></div><div></div>'
         $("#Start").append(h);*/
         $(".mb-1").text("Your Atlete:")
@@ -794,73 +334,7 @@
                 $(".ic").attr('class', 'icon-minus');
             }
         })
-        $(".atleta2").click(function() {
-            if (isShowing) {
-                $(".Atleta2").hide()
-                isShowing = false;
-                $(".ic").attr('class', 'icon-plus');
-            } else {
-                isShowing = true;
-                $(".Atleta2").show();
-                $(".ic").attr('class', 'icon-minus');
-            }
-        })
-        $(".atleta3").click(function() {
-            if (isShowing) {
-                $(".Atleta3").hide()
-                isShowing = false;
-                $(".ic").attr('class', 'icon-plus');
-            } else {
-                isShowing = true;
-                $(".Atleta3").show();
-                $(".ic").attr('class', 'icon-minus');
-            }
-        })
-        $(".atleta4").click(function() {
-            if (isShowing) {
-                $(".Atleta4").hide()
-                isShowing = false;
-                $(".ic").attr('class', 'icon-plus');
-            } else {
-                isShowing = true;
-                $(".Atleta4").show();
-                $(".ic").attr('class', 'icon-minus');
-            }
-        })
-        $(".atleta5").click(function() {
-            if (isShowing) {
-                $(".Atleta5").hide()
-                isShowing = false;
-                $(".ic").attr('class', 'icon-plus');
-            } else {
-                isShowing = true;
-                $(".Atleta5").show();
-                $(".ic").attr('class', 'icon-minus');
-            }
-        })
-        $(".atleta6").click(function() {
-            if (isShowing) {
-                $(".Atleta6").hide()
-                isShowing = false;
-                $(".ic").attr('class', 'icon-plus');
-            } else {
-                isShowing = true;
-                $(".Atleta6").show();
-                $(".ic").attr('class', 'icon-minus');
-            }
-        })
-        $(".atleta7").click(function() {
-            if (isShowing) {
-                $(".Atleta7").hide()
-                isShowing = false;
-                $(".ic").attr('class', 'icon-plus');
-            } else {
-                isShowing = true;
-                $(".Atleta7").show();
-                $(".ic").attr('class', 'icon-minus');
-            }
-        })
-
+       
         $(".updt1").click(function() {
             var nome1 = $(".Nome" + 1).text();
             var novoplano = []
@@ -888,162 +362,18 @@
 
 
         });
-        $(".updt2").click(function() {
-            var nome2 = $(".Nome" + 2).text();
-            var novoplano = []
-            for (i = 1; i < 8; i++) {
-                console.log(("line" + 2) + i)
-                if (document.getElementById(("line" + 2) + i).value != null) {
-                    var st2 = document.getElementById(("line" + 2) + i).value;
-                    document.getElementById(("line" + 2) + i).innerHTML = '';
-                    document.getElementById(("row" + 2) + i).innerHTML = st2;
-                    novoplano.push(st2);
-                } else {
-                    document.getElementById(("row" + 2) + i).innerHTML = '';
-                }
-
-            }
-            for (var y = 0; y < parseInt(window.localStorage.getItem("NumUsers")); y++) {
-                var datauser = JSON.parse(window.localStorage.getItem("user" + y))
-                if (datauser.Name == nome2) {
-                    console.log("aa")
-                    datauser.PlanoTreinoAtual = novoplano;
-                    window.localStorage.setItem("user" + y, JSON.stringify(datauser))
-                }
-            }
-
-
-        });
-        $(".updt3").click(function() {
-            var nome3 = $(".Nome" + 3).text();
-            var novoplano = []
-            for (i = 1; i < 8; i++) {
-                console.log(("line" + 3) + i)
-                if (document.getElementById(("line" + 3) + i).value != null) {
-                    var st3 = document.getElementById(("line" + 3) + i).value;
-                    document.getElementById(("line" + 3) + i).innerHTML = '';
-                    document.getElementById(("row" + 3) + i).innerHTML = st3;
-                    novoplano.push(st3);
-                } else {
-                    document.getElementById(("row" + 3) + i).innerHTML = '';
-                }
-
-            }
-            for (var y = 0; y < parseInt(window.localStorage.getItem("NumUsers")); y++) {
-                var datauser = JSON.parse(window.localStorage.getItem("user" + y))
-                if (datauser.Name == nome3) {
-                    console.log("aa")
-                    datauser.PlanoTreinoAtual = novoplano;
-                    window.localStorage.setItem("user" + y, JSON.stringify(datauser))
-                }
-            }
-
-
-        });
-        $(".updt4").click(function() {
-            var nome4 = $(".Nome" + 4).text();
-            var novoplano = []
-            for (i = 1; i < 8; i++) {
-                console.log(("line" + 4) + i)
-                if (document.getElementById(("line" + 4) + i).value != null) {
-                    var st4 = document.getElementById(("line" + 4) + i).value;
-                    document.getElementById(("line" + 4) + i).innerHTML = '';
-                    document.getElementById(("row" + 4) + i).innerHTML = st4;
-                    novoplano.push(st4);
-                } else {
-                    document.getElementById(("row" + 4) + i).innerHTML = '';
-                }
-
-            }
-            for (var y = 0; y < parseInt(window.localStorage.getItem("NumUsers")); y++) {
-                var datauser = JSON.parse(window.localStorage.getItem("user" + y))
-                if (datauser.Name == nome4) {
-                    console.log("aa")
-                    datauser.PlanoTreinoAtual = novoplano;
-                    window.localStorage.setItem("user" + y, JSON.stringify(datauser))
-                }
-            }
-
-
-        });
-        $(".updt5").click(function() {
-            var nome5 = $(".Nome" + 5).text();
-            var novoplano = []
-            for (i = 1; i < 8; i++) {
-                console.log(("line" + 5) + i)
-                if (document.getElementById(("line" + 5) + i).value != null) {
-                    var st5 = document.getElementById(("line" + 5) + i).value;
-                    document.getElementById(("line" + 5) + i).innerHTML = '';
-                    document.getElementById(("row" + 5) + i).innerHTML = st5;
-                    novoplano.push(st5);
-                } else {
-                    document.getElementById(("row" + 5) + i).innerHTML = '';
-                }
-
-            }
-            for (var y = 0; y < parseInt(window.localStorage.getItem("NumUsers")); y++) {
-                var datauser = JSON.parse(window.localStorage.getItem("user" + y))
-                if (datauser.Name == nome5) {
-                    console.log("aa")
-                    datauser.PlanoTreinoAtual = novoplano;
-                    window.localStorage.setItem("user" + y, JSON.stringify(datauser))
-                }
-            }
-
-
-        });
-        $(".updt6").click(function() {
-            var nome6 = $(".Nome" + 1).text();
-            var novoplano = []
-            for (i = 1; i < 8; i++) {
-                console.log(("line" + 1) + i)
-                if (document.getElementById(("line" + 6) + i).value != null) {
-                    var st6 = document.getElementById(("line" + 6) + i).value;
-                    document.getElementById(("line" + 6) + i).innerHTML = '';
-                    document.getElementById(("row" + 6) + i).innerHTML = st6;
-                    novoplano.push(st6);
-                } else {
-                    document.getElementById(("row" + 6) + i).innerHTML = '';
-                }
-
-            }
-            for (var y = 0; y < parseInt(window.localStorage.getItem("NumUsers")); y++) {
-                var datauser = JSON.parse(window.localStorage.getItem("user" + y))
-                if (datauser.Name == nome6) {
-                    console.log("aa")
-                    datauser.PlanoTreinoAtual = novoplano;
-                    window.localStorage.setItem("user" + y, JSON.stringify(datauser))
-                }
-            }
-
-
-        });
-        $(".updt7").click(function() {
-            var nome7 = $(".Nome" + 7).text();
-            var novoplano = []
-            for (i = 1; i < 8; i++) {
-                console.log(("line" + 7) + i)
-                if (document.getElementById(("line" + 7) + i).value != null) {
-                    var st7 = document.getElementById(("line" + 7) + i).value;
-                    document.getElementById(("line" + 7) + i).innerHTML = '';
-                    document.getElementById(("row" + 7) + i).innerHTML = st7;
-                    novoplano.push(st7);
-                } else {
-                    document.getElementById(("row" + 7) + i).innerHTML = '';
-                }
-
-            }
-            for (var y = 0; y < parseInt(window.localStorage.getItem("NumUsers")); y++) {
-                var datauser = JSON.parse(window.localStorage.getItem("user" + y))
-                if (datauser.Name == nome7) {
-                    console.log("aa")
-                    datauser.PlanoTreinoAtual = novoplano;
-                    window.localStorage.setItem("user" + y, JSON.stringify(datauser))
-                }
-            }
-
-
-        });
+        
+        $("#btn-chat0").click(function(){
+            var AtletaChat0=JSON.parse(window.localStorage.getItem(atletas[0]))
+            console.log(AtletaChat0);
+            var msg=$("#btn-input0").val();
+            AtletaChat0.mensagens.push(data.Name+"  said:  "+msg);
+            window.localStorage.setItem(atletas[0],JSON.stringify(AtletaChat0));
+            console.log(msg)
+            $(".chat0").append('<div class="chat-body clearfix"><p>'+data.Name+"  said:  "+msg+'</p></div>');
+            $("#btn-input0").val("")
+        })
+        
     });
 </script>
 </body>

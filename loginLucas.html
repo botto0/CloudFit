@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>CloudFit</title>
+    <title>Muscle - Free Bootstrap 4 Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -107,9 +107,37 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
         <script>
             $(document).ready(function() {
-                $(".NewAcc").click(function() {
-                    window.location.href = "CreateUser.html"
-                });
+                if(window.localStorage.getItem("Loaded")==null){
+                user0 = {
+                            "Name": "KnockOut",
+                            "pwd": "passteste1",
+                            "tipo": "Gym",
+                            "Pts": ["user1"]
+                        }
+                user1 = {
+                            "Name": "Dinis",
+                            "pwd": "passteste2",
+                            "tipo": "PersonalTrainer",
+                            "Atletas": ["user2"],
+                            "Gym": "KnockOut"
+                }
+                user2 ={
+                            "Name":"Francisca" ,
+                            "pwd": "passteste3",
+                            "tipo": "Atlete",
+                            "PlanoTreinoAtual": ['Lat pulldown (4X12)', 'Bentover row (4X12)', 'Pull-Ups (4XMAX)', 'Push-Ups (4XMAX)', 'Bicep curl (4X12) ', 'Tricep dip (4X12)', 'Shoulder press (4X12)'],
+                            "mensagens":[],
+                            "Pt": "user0"
+                }
+                window.localStorage.setItem("user0",JSON.stringify(user0))
+                window.localStorage.setItem("user1",JSON.stringify(user1))
+                window.localStorage.setItem("user2",JSON.stringify(user2))
+                window.localStorage.setItem("NumUsers","3")
+                window.localStorage.setItem("numAtribuicao","1")
+                window.localStorage.setItem("numPersonalT","1")
+                window.localStorage.setItem("menor","1")
+                window.localStorage.setItem("Loaded","true");
+                }
                 $(".done").click(function() {
                     var nomeuser = $(".uname").val();
                     var pwduser = $(".upwd").val();
