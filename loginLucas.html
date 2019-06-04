@@ -82,19 +82,14 @@
                             <div class="form-group" style="margin-left: 2%">
                                 <input type="button " value="Login" class="btn btn-primary py-3 px-5 done">
                             </div>
-<<<<<<< HEAD
-=======
-                            <span class="psw"><a href="#" data-toggle="modal" data-target="#exampleModal" class="NewAcc">Create New Account</a></span>
->>>>>>> cf4c064fa8dbf2809c2389bee6905ff2e9e3558a
                         </div>
                     </form>
                 </div>
 
 
         </section>
-<<<<<<< HEAD
         <section>
-            <div class="jumbotron" style="background-color:rgba(0, 0, 0, 0);" ">
+            <div class="jumbotron" style="background-color:rgba(0, 0, 0, 0);" >
             </div>
         </section>
         <footer class="ftco-footer ftco-section img ">
@@ -182,85 +177,6 @@
                     } else {
                         $(".msg ").text("Conta inexistente ")
                         $(".erro ").show();
-=======
-        <div class="container-fluid">
-            <div class="row mb-2" style="display: flex;
-                            justify-content:center;">
-                <div class="col-lg-3 col-md-6 mb-5 mb-md-5">
-                    <div class="ftco-footer-widget mb-4">
-                        <p>Website desenvolvido no âmbito da cadeira Modelação e Análise de Sistemas. <br>Universidade de Aveiro</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- loader -->
-        <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-        </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-        <script>
-            $(document).ready(function() {
-                if(window.localStorage.getItem("Loaded")==null){
-                user0 = {
-                            "Name": "KnockOut",
-                            "pwd": "passteste1",
-                            "tipo": "Gym",
-                            "Pts": ["user1"]
-                        }
-                user1 = {
-                            "Name": "Dinis",
-                            "pwd": "passteste2",
-                            "tipo": "PersonalTrainer",
-                            "Atletas": ["user2"],
-                            "Gym": "KnockOut"
-                }
-                user2 ={
-                            "Name":"Francisca" ,
-                            "pwd": "passteste3",
-                            "tipo": "Atlete",
-                            "PlanoTreinoAtual": ['Lat pulldown (4X12)', 'Bentover row (4X12)', 'Pull-Ups (4XMAX)', 'Push-Ups (4XMAX)', 'Bicep curl (4X12) ', 'Tricep dip (4X12)', 'Shoulder press (4X12)'],
-                            "mensagens":[],
-                            "Pt": "user0"
-                }
-                window.localStorage.setItem("user0",JSON.stringify(user0))
-                window.localStorage.setItem("user1",JSON.stringify(user1))
-                window.localStorage.setItem("user2",JSON.stringify(user2))
-                window.localStorage.setItem("NumUsers","3")
-                window.localStorage.setItem("numAtribuicao","1")
-                window.localStorage.setItem("numPersonalT","1")
-                window.localStorage.setItem("menor","1")
-                window.localStorage.setItem("Loaded","true");
-                }
-                $(".done").click(function() {
-                    var nomeuser = $(".uname").val();
-                    var pwduser = $(".upwd").val();
-                    var UserExists = false;
-                    for (var c = 0; c < parseInt(window.localStorage.getItem("NumUsers")); c++) {
-                        var Utilizador = JSON.parse(window.localStorage.getItem("user" + c));
-                        if (Utilizador.Name == nomeuser && pwduser == Utilizador.pwd) {
-                            UserExists = true;
-                            var tipo = Utilizador.tipo;
-                            window.localStorage.setItem("Data", window.localStorage.getItem("user" + c))
-                        }
-                    }
-                    if (UserExists) {
-                        console.log("SUCESS")
-                        if (tipo == "Gym") {
-                            console.log("Easy")
-                            window.location.href = "Ginasio.html"
-                        } else if (tipo == "Atlete") {
-                            console.log("Easy")
-                            window.location.href = "athlete_info.html"
-                        } else {
-                            console.log("Easy")
-                            window.location.href = "PT.html"
-                        }
-                        $(".erro").hide();
-                    } else {
-                        $(".msg").text("Conta inexistente")
-                        $(".erro").show();
->>>>>>> cf4c064fa8dbf2809c2389bee6905ff2e9e3558a
                     }
                 });
             });
