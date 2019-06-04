@@ -10,6 +10,10 @@
     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+<<<<<<< HEAD
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+=======
+>>>>>>> cf4c064fa8dbf2809c2389bee6905ff2e9e3558a
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -60,6 +64,17 @@
 
 
     <section class="ftco-counter ftco-bg-dark img" id="section-counter" style="background-image: url(images/bg_2.jpg);" data-stellar-background-ratio="0.5">
+<<<<<<< HEAD
+        <div id="id01" class="w3-modal avaliacao">
+                <div class="w3-modal-content w3-animate-top w3-card-4" style="display: block">
+                    <span class="w3-button w3-display-topright close">&times;</span>
+                    <header class="w3-container w3-teal">
+                        <h2 class="msg" style="color: black">Têm uma Avavaliação Marcada com o pt</h2>
+                    </header>
+                </div>
+            </div>
+=======
+>>>>>>> cf4c064fa8dbf2809c2389bee6905ff2e9e3558a
         <div class="overlay"></div>
         <div class="container">
             <div class="row justify-content-center">
@@ -124,7 +139,11 @@
                             <div class="coach align-items-stretch">
                                 <div class="img" style="background-image: url(images/trainer-1.jpg);"></div>
                                 <div class="text bg-white p-4 ftco-animate">
+<<<<<<< HEAD
+                                    <h3 class="pt"><a href="#">Mark Brook</a></h3>
+=======
                                     <h3><a href="#">Mark Brook</a></h3>
+>>>>>>> cf4c064fa8dbf2809c2389bee6905ff2e9e3558a
                                     <p>Our fitness is important and something we should all enjoy. My aim is to create a positive and fun experience for clients, as well as using the best of my knowledge and experience to help clients achieve their goals.</p>
                                     <ul class="ftco-social-media d-flex mt-4" style="display:flex; justify-content:center; ">
                                         <li class="ftco-animate"><a href="https://twitter.com/?lang=pt_pt" class="mr-2 d-flex justify-content-center align-items-center"><span class="icon-twitter"></span></a></li>
@@ -151,7 +170,11 @@
                             <div class="coach align-items-stretch">
                                 <div class="img" style="background-image: url(images/gym_premade.jpg);"></div>
                                 <div class="text bg-white p-4 ftco-animate">
+<<<<<<< HEAD
+                                    <h3 class="gym"><a href="#">FitMAS</a></h3>
+=======
                                     <h3><a href="#">FitMAS</a></h3>
+>>>>>>> cf4c064fa8dbf2809c2389bee6905ff2e9e3558a
                                     <p>Step into our spacious gym and you'll feel the difference. A buzz of energy and inspiration. A community unmatched amenities and some of the best studio classes. Come in and discover all you imagined and more.
                                     </p>
                                     <ul class="ftco-social-media d-flex mt-4" style="display:flex; justify-content:center; ">
@@ -213,6 +236,24 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
         <script src="js/google-map.js"></script>
         <script src="js/main.js"></script>
+<<<<<<< HEAD
+        <script>
+            $(document).ready(function(){
+                $(".pt").text(JSON.parse(window.localStorage.getItem("user1")).Name)
+                $(".gym").text(JSON.parse(window.localStorage.getItem("user0")).Name)
+                var Atleta=JSON.parse(window.localStorage.getItem("user2"));
+                if(Atleta.Avalicao=="true"){
+                    $(".avaliacao").show();
+                }
+                $(".close").click(function(){
+                    $(".avaliacao").hide()
+                    Atleta.Avalicao="false"
+                    window.localStorage.setItem("user2",JSON.stringify(Atleta))
+                })
+            });
+        </script>
+=======
+>>>>>>> cf4c064fa8dbf2809c2389bee6905ff2e9e3558a
 
 </body>
 
