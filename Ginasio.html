@@ -61,14 +61,14 @@
             </div>
         </div>
     </section>
-<br><br>
+    <br><br>
 
 
     <section>
         <div class="container atletas">
         </div>
     </section>
-<br>
+    <br>
     <footer class="ftco-footer ftco-section img">
         <div class="overlay"></div>
         <div class="container">
@@ -93,13 +93,13 @@
             console.log(PerTra)
             for (var a = 0; a < PerTra.length; a++) {
                 console.log("a")
-                $(".atletas").append('<div class="row"><div class="col-md-3"><strong>Personal Trainer: </strong>'+JSON.parse(window.localStorage.getItem(PerTra[a])).Name+'</div>------------->                  <div class="col-md-3"><table '+"class=table"+a+'><tr><td><strong>Athletes:</strong></td></tr></table></div></div><br>');
+                $(".atletas").append('<div class="row"><div class="col-md-3"><strong>Personal Trainer: </strong>' + JSON.parse(window.localStorage.getItem(PerTra[a])).Name + '</div>------------->                  <div class="col-md-3"><table ' + "class=table" + a + '><tr><td><strong>Athletes:</strong></td></tr></table></div></div><br>');
                 /*<div class="container"><div class="row"><div class="col-md-3"><strong>Personal Trainers:</strong></div><div class="col-md-3"><table><tr><td><strong>Athletes:</strong></td></tr></table></div></div><br></div>*/
                 var AtletaPT = JSON.parse(window.localStorage.getItem(PerTra[a])).Atletas;
                 console.log(AtletaPT)
                 for (var b = 0; b < AtletaPT.length; b++) {
                     console.log("aaa")
-                    $(".table"+a).append("<tr><td>"+JSON.parse(window.localStorage.getItem(AtletaPT[b])).Name+"</td></tr>")
+                    $(".table" + a).append("<tr><td>" + JSON.parse(window.localStorage.getItem(AtletaPT[b])).Name + "</td></tr>")
                 }
             }
         })
