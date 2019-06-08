@@ -36,8 +36,12 @@
             padding: 8px;
         }
         
+        tr:nth-child(odd) {
+            background-color: #333333;
+        }
+        
         tr:nth-child(even) {
-            background-color: #dddddd;
+            background-color: #333333;
         }
     </style>
 
@@ -79,15 +83,20 @@
     </section>
 
     <section>
+        <br>
+
         <div class="col-md-8 offset-2">
+            <h3>Weight Progress</h3>
             <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
             <div id="chart_div"></div>
         </div>
+        <br>
     </section>
 
     <section>
-        <div class="container">
-            <h3>Planos de Treino Antigos</h3>
+        <div class="container col-md-8 offset-2">
+            <h3>Old Workout Plans</h3>
+            <br>
             <div class="row">
                 <div class="col-sm-4 col1">
                     <table>
@@ -114,6 +123,7 @@
                         </tr>
                     </table>
                 </div>
+                <br>
                 <div class="col-sm-4 col2">
                     <table>
                         <tr>
@@ -139,6 +149,7 @@
                         </tr>
                     </table>
                 </div>
+                <br>
                 <div class="col-sm-4 col3">
                     <table>
                         <tr>
